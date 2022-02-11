@@ -22,7 +22,7 @@ router.get('/', async (req, res) => {
 
 // get one product
 router.get('/:id', async (req, res) => {
-  // TODO: find a single product by its `id`
+  // find a single product by its `id`
   // be sure to include its associated Category and Tag data
   try {
     let product_data = await Product.findByPk(req.params.id, {
@@ -37,8 +37,8 @@ router.get('/:id', async (req, res) => {
   }
 });
 
-// create new product
-router.post('/', (req, res) => {
+// TODO: create new product
+router.post('/', async (req, res) => {
   /* req.body should look like this...
     {
       product_name: "Basketball",
@@ -47,7 +47,7 @@ router.post('/', (req, res) => {
       tagIds: [1, 2, 3, 4]
     }
   */
-  Product.create(req.body)
+  await Product.create(req.body)
     .then((product) => {
       // if there's product tags, we need to create pairings to bulk create in the ProductTag model
       if (req.body.tagIds.length) {
@@ -69,7 +69,7 @@ router.post('/', (req, res) => {
     });
 });
 
-// update product
+// TODO: update product
 router.put('/:id', (req, res) => {
   // update product data
   Product.update(req.body, {
