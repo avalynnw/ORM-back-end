@@ -11,7 +11,7 @@ Category.init(
       type: DataTypes.INTEGER,
       primaryKey: true,
       autoIncrement: true,
-      // onDelete: 'CASCADE'
+      //onDelete: 'CASCADE'
     },
     category_name: {
       type: DataTypes.STRING,
@@ -24,7 +24,6 @@ Category.init(
     freezeTableName: true,
     underscored: true,
     modelName: 'category',
-    // onDelete: 'CASCADE'
   }
 );
 
