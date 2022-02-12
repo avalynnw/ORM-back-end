@@ -2,7 +2,7 @@
 
 ## Description
 
-This program is desinged to be able to interact with a database using sequalize and data models.
+This program is designed to be able to interact with a database using sequalize and data models.
 
 ## Table of Contents
 
