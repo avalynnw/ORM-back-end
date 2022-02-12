@@ -56,7 +56,7 @@ Run the program from the root directory using:
 
 and follow the promts to interact with the database.
 
-![terminal screenshot of application](./assets/application.png)
+![terminal screenshot of application](./Assets/application.png)
 
 ### [Walkthrough Video](https://watch.screencastify.com/v/dV7gfEbpNCIroASYvUPc)
 
